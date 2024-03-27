@@ -57,7 +57,7 @@ header {
     padding: 20px 50px 20px 0px;
 } 
 .menu-links{
-    color:#fff;
+    color:#092041;
     display: flex;
     justify-content: space-between;
     align-items: center;   
@@ -76,19 +76,21 @@ header {
 }
 .menu-linksbtn a {
     display:block;
-    display:block;
     text-align: center;
-    color:#fff;
+    color:#092041;
+    background-color: #3FCDE6;
+    padding: 8px 16px;
+    border-radius: 30px;
     text-decoration:none;
     font-family: 'Urbanist', sans-serif;
     font-size: 16px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 700;
     line-height: 150%;
     letter-spacing:1px
 }
 .menu-linksbtn a:hover{
-    color: #ffffffbd;
+    color: #092041a9;
     transition: 0.5s;
 }
 .menusocial{
@@ -110,19 +112,18 @@ header {
 }
 .menusocial li:first-child{
     display: inline-flex;
-    margin-right: 5px;
-    border: 1px solid #fff;
+    background-color: #FFF;
     border-radius: 20px;
 }
 .menusocial a:first-child{
-    color: #fff;
+    color: #092041;
     font-family: 'Urbanist', sans-serif;
     font-size: 16px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 700;
     line-height: 150%;
     align-items: center;
-    padding: 8px 0px;
+    padding: 8px 10px;
     width: 119px;
 }
 
@@ -154,7 +155,7 @@ header {
 .btn-toggle {
     position:absolute;
     right:30px;
-    top:0px;
+    top:10px;
     display:none;
     flex-direction:column;
     justify-content:space-between;
@@ -212,7 +213,7 @@ header {
       padding: 0px;
   }
   .menu-links{
-    background-color: #07041E;
+    background-color: #092041;
   flex-direction: column;
   align-items:center;
   margin-top: 0px;
@@ -222,7 +223,7 @@ header {
   padding-top: 50px;
   border-bottom-right-radius: 32px;
   border-bottom-left-radius: 32px;
-  height:290px
+  height:350px
   }
   .menu-links ul{
       display: block;
@@ -233,6 +234,10 @@ header {
   }
   .menu-linksbtn{
       display: flex;
+  }
+  .menu-linksbtn a{
+    background-color: transparent;
+    color: #fff;
   }
   .menusocial ul{
       display: flex;
@@ -256,17 +261,8 @@ header {
       display: inline-flex;
       padding: 2px 4px;
       gap: 8px;
-      border: 1px solid #309AD7;
       margin-bottom: 10px;
       border-radius: 20px;
-  }
-  .menusocial a:first-child{
-      color: #309AD7;
-      font-size: 14px;
-      font-style: normal;
-      font-weight: 500;
-      line-height: 110%;
-      align-items: center;
   }
   .menu-links.active{
       margin: auto;
@@ -282,7 +278,6 @@ header {
   #home {
   display:flex;
   flex-direction:column;
-  max-width: 400px;
   text-align: right;
   align-items: end;
   }   
@@ -300,6 +295,7 @@ header {
 }
 .videoimg {
     display: block;
+    max-height: 730px;
     width: 100%;
     object-fit: cover;
 }
@@ -345,7 +341,7 @@ header {
 .videop p svg{display: none;}
 @media screen and (max-width:1250px) {
     .videop img{
-        max-width: 200px;
+        max-width: 290px;
         width: 100%;
         height: 100%;
         margin: auto;
@@ -359,10 +355,13 @@ header {
         top: 50%;
     }
 }
-@media screen and (max-width:700px) {
+@media screen and (max-width:980px) {
+    .videocontainer{
+        height: 1100px;
+    }
     .videoimg{
         width: 100%;
-        height: 500px;
+        height: 990px;
         object-position: bottom;
     }
     .videop img{
@@ -370,11 +369,12 @@ header {
         width: 100%;
         height: 100%;
         margin: auto;
+        margin-bottom: 8px;
     }
     .videop{
         flex-direction: column;
         padding: 0;
-        top: 45%;
+        top: 47%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
@@ -452,102 +452,24 @@ header {
     transform: translateX(0%);
     opacity: 1;
 } */
-/* 
-@media screen and (max-width:1600px) {
-    .aboutcontainer{
-        max-height: 610px;
-    }
-    .about{
-        padding:0 80;
-    }
-    .about h2{
-        margin-top: 0px;
-        margin-bottom: 20px;
-    }
-    .about h2 svg{
-        display: block;
-        position: absolute;
-        justify-content: center;
-        top: 50px;
-        left: 42%;
-    }
-    .abouttext p{
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 130%;
-        margin-top: 40px;
-    }
-    .abouttext p span{
-        font-size: 14px;
-    }
-    .abouttext span{
-        font-size: 14px;
-        font-style: normal;
-        line-height: 130%;
-        font-weight: 600;
-    }
-} 
-@media screen and (max-width:1290px) {
-    .aboutcontainer{
-        max-height: 635px;
-    }
-}*/
-@media screen and (max-width:1000px) {
-    .aboutcontainer{
-        max-height: 790;
-    }
-    .aboutcontainer .bgs-mob{
-        top: -110;
-    }
-    .aboutcontainer img{
-        max-height: 110%;
-    }
-    .about{
-        padding:0 10;
-    }
-    .about h2{
-        margin-top: 40px;
-        margin-bottom: 60px;
-    }
-    .abouttext{ 
-        max-width: 600px;
-        margin: auto;
-        margin-top: 10px;
-    }
-    .abouttext p{
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 125%;
-        margin-top: 40px;
-        max-width: 450px;
-        margin: auto;
-    }
-}
 @media screen and (max-width:800px) {
     .aboutcontainer{
         max-height: auto;
+        padding: 50px 0;
     }
     .aboutcontainer img{
         max-height: none;
     }
     .about{
-        padding:0 10;
+        padding:0 10px;
     }
     .about h2{
-        margin-top: 0px;
-        margin-bottom: 60px;
-    }
-    .about h2 svg{
-        top: 50px;
-        left: 50%;
-        transform: translateX(-50%);
+        margin-bottom: 40px;
     }
     .abouttext{ 
         max-width: 900px;
         margin: auto;
-        margin-top: -50px;
+        margin-top: 0px;
     }
     .abouttext p{
         font-size: 14px;
@@ -669,7 +591,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 50 10;
+    padding: 50px 10px;
 }
 .preference h3{
     width: 252px;
@@ -683,8 +605,7 @@ header {
 .preferencegrid{
     display: flex;
     flex-direction: column;
-    padding-bottom: 0px;
-    padding: 10;
+    padding-bottom: 50px;
 }
 .preferencecard{
     padding-bottom: 30px;
@@ -763,7 +684,7 @@ header {
 .mySwiper {
   width: 100%;
   height: 100%;
-  max-height: 690px;
+  max-height: 720px;
   cursor: grab;
   margin: auto;
 }
@@ -780,6 +701,7 @@ header {
   border-radius: 30px;
   background-color: #092041;
   margin-left: 15px;
+  margin-bottom: 35px;
 }
 .servicesswiper{
     height: 680px;
@@ -812,18 +734,29 @@ header {
     margin: auto;
     margin-top: 12px;
 }
-@media screen and (max-width:790px) {
+@media screen and (max-width:890px) {
     .servicescontainer{
-        padding: 30 10 10 10;
-        margin-top: 309
+        padding: 50px 0;
+        margin: auto
     }
     .mySwiper {
-      padding:0 10 0 10;
+      padding:0;
     }
     .swiper1 {
-      max-width: 353px;
-      margin-left: 0px;
-      max-height: 640;
+      max-width: 355px;
+      border-radius: 30px;
+    }
+    .servicesswiper{
+        height: 640px;
+    }
+    .servicesswiper h2{
+        font-size: 20px;
+        margin-top: 20px;
+    }
+    .servicesswiper p{
+        max-width: 291px;
+        font-size: 14px;
+        margin-top: 15px;
     }
 }
 .portifoliotitle p{
@@ -900,13 +833,9 @@ swiper-slide.swiper2 {
   object-fit: cover !important;
   object-position: center;
 }
-@media screen and (max-width:790px) {
+@media screen and (max-width:890px) {
 .portifoliocontainer{
-    background-color: #fff;
-    width: 100%;
-    max-width: 3290px;
-    margin: 0 auto;
-    padding: 0px 20px 150px 10;
+    padding: 50px 0;
 }
 swiper-container.mySwiper2 {
   max-height: 460px;
@@ -1001,36 +930,7 @@ swiper-slide.swiper2 {
     margin: auto;    
 }
 
-@media screen and (max-width:1390px) {
-    .reviewscontainer{
-        max-height: 560px;
-    }
-    .review{
-    padding: 0 0;
-    }
-    .swiper3 {
-      margin-left: 10px;
-    }
-    .mySwiper3{
-      max-height: 340px;
-      margin: 40 0 !important;
-    }
-    .reviewbg{
-        display: none;
-    }
-    .reviewbgm{
-        display: block;
-        pointer-events: none;
-        position: absolute;
-        width: 100%;
-        object-fit: cover;
-        max-width: 2999px;
-        max-height: 100%;
-        flex-shrink: 0;
-        z-index: 0;
-    }
-}
-@media screen and (max-width: 1090px) {
+@media screen and (max-width: 1490px) {
     .bgs-web{
         display: none;
     }
@@ -1045,38 +945,25 @@ swiper-slide.swiper2 {
         flex-shrink: 0;
         z-index: 0;
     }
-    .review{
-        width: 100%;
-        max-width: 1340px;
-        margin: auto;
-        padding: 0 20;
-    }
-    .swiper3 {
-      margin-left: 0px;
-    }
 }
-@media screen and (max-width: 790px) {
+@media screen and (max-width: 890px) {
     .reviewstitle h2{
-        padding: 23px 0 0 0;
+        padding: 50px 0 0 0;
     }
     .reviewscontainer{
-        width: 100%;
-        max-width: 3000px;
-        margin: auto;
-        height: 100%;
-        max-height: 445px;
+        height: 325px;
     }
     .review{
         width: 100%;
         max-width: 1340px;
         margin: auto;
-        padding: 0 50;
-    }
-    .swiper3 {
-      margin-left: 0px;
+        padding: 0;
     }
     .mySwiper3{
-      margin: 30 0 !important;
+        padding: 50px 10px 50px 0;
+    }
+    .swiper3{
+        padding-left: 10px;
     }
 }
 .formgrid{
@@ -1166,119 +1053,42 @@ form {
     background-color: #309ad7cc;
     transition: 0.7s;
 }
-.formgroup1, .formgroup2{
-    display: flex;
-    gap: 20px;
-}
-/*@media screen and (max-width:1000px) {    
-    .form{
-        position: absolute;
-        display: block;
-        right: 0;
-        top: 30;
-        left: 0;
-        width: 460px;
-        justify-content: right;
-        margin: auto;
-        height: 450px;
-    }
-    form {
-        width: 100%;
-        list-style: none;
-        display: flex;
-        justify-content: right;
-        flex-direction: column;
-        gap: 17px;
-    }
-    #form input, textarea{
-        width: 100%;
-        list-style: none;
-        border-radius: 16px;
-        padding: 10px;
-    }
-    #form input{
-        height:  46px;    
-    }
-    #form button{
-        margin-top: 5px;
-        width: 110px;
-        border-radius: 5px;
-        list-style: none;
-        color: #309AD7;
-        border-radius: 16px;
-        padding: 8px;
-        margin: auto;
-        cursor: pointer;
-    }
-    .formgroup1, .formgroup2{
-        display: flex;
-        gap: 20px;
-    }
-}*/
 @media screen and (max-width:1290px) {
     .formgrid{
-        max-height: 699px;
+        max-height: 999px;
         padding: 0;
     }
 }
-@media screen and (max-width:770px) {
+@media screen and (max-width:1070px) {
     .formgrid{
-        background-color: #07041E;
-        max-height: 670px;
-    }
-    .form{
-        width: 370px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 100%;
+        max-width: 9999px;
         margin: auto;
-        height: 420px;
-        padding: 30px;
+        height: 1000px;
+        margin: auto;
+        max-height: 1070px;
     }
-    .form h2{
-        font-size: 32;
-        line-height: 32px;
+    .bgs-mob{
+        height: 1200px;
+    }
+    .forminfos{
+        padding: 0px 10px;
+    }
+    .forminfos img{
+        width:250px;
         margin-bottom: 30px;
     }
-    form {
-        width: 100%;
-        list-style: none;
-        display: flex;
-        justify-content: right;
-        flex-direction: column;
-        gap: 15px;
-    }
-    #form input, textarea, select{
-        width: 100%;
-        list-style: none;
-        padding: 20px;
-    }
-    #form input{
-        height:  46px;    
-    }
-    #form textarea{
-        padding: 20px;
-    }
-    #form select option:first{
-        color: #000000a4;
-    }
-    #form button{
-        margin-top: 15px;
-        width: 180px;
-        border-radius: 5px;
-        list-style: none;
-        border: 2px solid #fff;
-        color: #07041E;
-        border-radius: 16px;
-        padding: 10px;
+    .form{
+        width: 300px;
         margin: auto;
-        background-color: #309AD7;
-        cursor: pointer;
+        /* height: 420px; */        
+
     }
-    #form button:hover{
-        background-color: #309ad7cc;
-        transition: 0.7s;
-    }
-    .formgroup1, .formgroup2{
-        display: flex;
-        gap: 20px;
+    .form h2{
+        font-size: 18px;
     }
 }
 
@@ -1425,19 +1235,11 @@ footer{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 100%;
         height: auto;
         text-align: center;
     }
-    .adress{
-        display: flex;
-        margin: auto;
-        justify-content: center;
-    }
-    .adress p{
-        justify-content: center;
-        margin-top: 0px;
-        margin: auto;
+    .footermenu2, .adress{
+        margin-top: 15px;
     }
     .footerimglogo{
         display: flex;
@@ -1482,7 +1284,6 @@ footer{
         justify-content: center;
         gap: 5px;
         padding-top: 8px;
-        margin-left: 19px;
     }
     .footersocials ul a{
         text-decoration: none;

@@ -14,13 +14,13 @@ html{
     scroll-behavior: smooth;
 }
 header {
-    position: relative;
+    position: absolute;
     display:flex;
     justify-content: space-between;
     width:100%;
     max-width:9900px;
     margin: auto;
-    background-color: #092041;
+    height: 95px;
 }
 #home {
     display:flex;
@@ -31,7 +31,6 @@ header {
     height: 95px;
     max-width: 1440px;
     margin: auto;
-    background-color: #092041;
     align-items: center;
 }
 .nonebar{
@@ -62,7 +61,7 @@ header {
     justify-content: space-between;
     align-items: center;   
     width: 100%;
-    max-width: 1200px;
+    max-width: 1300px;
     margin: auto;
     align-items: center;  
 }
@@ -95,6 +94,11 @@ header {
 }
 .menusocial{
     right: 0;
+    width:215px;
+    display: flex;
+    text-align: right;
+    justify-content:space-between;
+    gap: 8px;
 }
 .menusocial ul{
     list-style: none;
@@ -102,29 +106,38 @@ header {
     align-items: center;
     margin: 0 auto;
     justify-content:space-between;
-    width:150px;
     text-align: center;
+    gap: 8px;
 }
 .menusocial ul a {
     text-decoration:none;
     cursor: pointer;
     align-items: center;
 }
-.menusocial li:first-child{
+.socialgettouch{
     display: inline-flex;
-    background-color: #FFF;
+    background: linear-gradient(90deg, rgba(174,134,37,1) 10%, rgba(210,172,71,1) 55%, rgba(247,239,138,1) 100%);
     border-radius: 20px;
-}
-.menusocial a:first-child{
     color: #092041;
-    font-family: 'Urbanist', sans-serif;
+    display: flex;
+    justify-content: center;
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
     line-height: 150%;
     align-items: center;
+    text-align: center;
     padding: 8px 10px;
-    width: 119px;
+    width: 129px;
+    text-decoration: none;
+}
+.socialgettouch:hover{
+    text-decoration: none;
+    transition: 0.5s ease-out;
+    letter-spacing: 0.3px;
+}
+.menusocial li{
+    width: auto;
 }
 
 .logo-m{
@@ -132,12 +145,11 @@ header {
     display:block;
     width: 60px;
     }
-/* 
 .menu-linksbtn a:hover,
 .menu-linksbtn a.active {
   transition: 0.5s ease-out;
   letter-spacing: 1.2px;
-} */
+} 
 .btn-toggle{display: none;}
 @media only screen and (max-width: 1000px) {
     .nonebar{display: none}
@@ -213,7 +225,7 @@ header {
       padding: 0px;
   }
   .menu-links{
-    background-color: #092041;
+    background-color: #0920413d;
   flex-direction: column;
   align-items:center;
   margin-top: 0px;
@@ -227,7 +239,7 @@ header {
   }
   .menu-links ul{
       display: block;
-      margin-right: 10px;
+      margin-right: 0px;
   }
   .menu-links a {
   padding:.25rem 2rem
@@ -257,9 +269,10 @@ header {
       cursor: pointer;
       align-items: center;
   }
-  .menusocial li:first-child{
-      display: inline-flex;
-      padding: 2px 4px;
+  .socialgettouch{
+      display: flex;
+      white-space: nowrap;
+      height: 41px;
       gap: 8px;
       margin-bottom: 10px;
       border-radius: 20px;
@@ -315,8 +328,9 @@ header {
     max-width: 9999px;
     margin: auto;
     background-color:transparent;
-    max-height: 700px;
+    max-height: 800px;
 }
+/* BACKGROUND VIDEO COM COR MAIS ESCURA */
 .videoimg {
     display: block;
     max-height: 730px;
@@ -330,7 +344,7 @@ header {
     width:100%;
     max-width: 1400px;
     margin: auto;
-    padding: 0 50px 0 50px;
+    padding: 130px 50px 0 50px;
     justify-content: center;
     top: 50%;
     left: 50%;
@@ -342,26 +356,6 @@ header {
     height: 100%;
     margin: auto;
 }
-.videop p{
-    color: #fff;
-    width: 358px;
-    height: auto;
-    margin: auto;
-    text-align: center;
-    font-family: 'Urbanist';
-    font-size: 40.033px;
-    font-style: normal;
-    font-weight: 400;
-    padding-top: 40px;
-}
-.videop p span{
-    text-decoration:underline#309AD7 6px !important;
-    text-underline-offset:15px !important;
-    -webkit-text-decoration-line:  underline !important;
-    -webkit-text-decoration-color: #309AD7 !important;
-    -webkit-text-decoration-style: solid !important;
-    -webkit-text-decoration-thickness: 6px !important;
-}
 .videop p svg{display: none;}
 @media screen and (max-width:1250px) {
     .videop img{
@@ -369,14 +363,6 @@ header {
         width: 100%;
         height: 100%;
         margin: auto;
-    }
-    .videop p{
-        width: 100%;
-        max-width: 370px;
-        height: auto;
-        margin: auto;
-        font-size: 40.033px;
-        top: 50%;
     }
 }
 @media screen and (max-width:980px) {
@@ -402,11 +388,6 @@ header {
         left: 50%;
         transform: translate(-50%, -50%);
     }
-    .videop p{
-        max-width:269px;
-        padding-top: 30px;
-        line-height: 1.1;
-    }
 }
 
 .aboutcontainer{
@@ -429,7 +410,7 @@ header {
     color: #FFF;
     font-family: 'Urbanist';
 }
-.about h2{
+/* .about h2{
     display: flex;
     flex-direction: column;    
     justify-content: center;
@@ -439,7 +420,7 @@ header {
 .about h2 svg{
     margin: auto;
     margin-top: 16px;
-}
+} */
 .abouttext{ 
     display: flex;
     flex-direction: column; 
@@ -447,16 +428,12 @@ header {
     margin: auto;
 }
 .abouttext p{
-    max-width: 485px;
+    max-width: 985px;
     font-size: 14px;
     font-style: normal;
     font-weight: 600;
     line-height: 130%;
     margin: auto;
-    margin-top: 50px;
-}
-.abouttext p span{
-    font-size: 14px;
 }
 .abouttext span{
     font-size: 14px;
@@ -487,9 +464,9 @@ header {
     .about{
         padding:0 10px;
     }
-    .about h2{
+    /* .about h2{
         margin-bottom: 40px;
-    }
+    } */
     .abouttext{ 
         max-width: 900px;
         margin: auto;
@@ -500,7 +477,6 @@ header {
         font-style: normal;
         font-weight: 600;
         line-height: 130%;
-        margin-top: 40px;
         max-width: 450px;
         margin: auto;
     }
@@ -1193,8 +1169,8 @@ footer{
     list-style: none;
     display: flex;
     text-align: center;
-    gap: 18px;
-    padding-top: 18px;
+    gap: 10px;
+    padding-top: 10px;
 }
 .footersocials ul a{
     text-decoration: none;

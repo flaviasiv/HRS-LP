@@ -53,7 +53,7 @@ header {
     width: 100%;
     max-width: 1400px;
     margin: auto;
-    padding: 20px 50px 20px 0px;
+    padding: 20px 50px 20px 50px;
 } 
 .menu-links{
     color:#092041;
@@ -94,7 +94,7 @@ header {
 }
 .menusocial{
     right: 0;
-    width:215px;
+    width:255px;
     display: flex;
     text-align: right;
     justify-content:space-between;
@@ -116,7 +116,8 @@ header {
 }
 .socialgettouch{
     display: inline-flex;
-    background: linear-gradient(90deg, rgba(174,134,37,1) 10%, rgba(210,172,71,1) 55%, rgba(247,239,138,1) 100%);
+    /* background: linear-gradient(90deg, rgba(174,134,37,1) 10%, rgba(210,172,71,1) 55%, rgba(247,239,138,1) 100%); */
+    background: repeating-linear-gradient(to right, #a2682a 0%, #be8c3c 8%, #be8c3c 18%, #d3b15f 27%, #faf0a0 35%, #ffffc2 40%, #faf0a0 50%, #d3b15f 58%, #be8c3c 67%, #b17b32 77%, #bb8332 83%, #d4a245 88%, #e1b453 93%, #a4692a 100%);
     border-radius: 20px;
     display: flex;
     justify-content: center;

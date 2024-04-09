@@ -632,7 +632,20 @@ header {
     justify-content: center;
 }
 .servicestitle{
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+    padding-bottom: 60px;
     color: #60A6CE
+}
+.servicestitle small img{
+    display: flex;
+    margin-right: 8px;
+}
+.servicestitle small{
+    display: flex; 
+    padding-left:50px;
+    font-size: 18px
 }
 .servicescontainer .servicestitle h2{
     display: flex;
@@ -643,7 +656,7 @@ header {
     font-size: 32px;
     font-style: normal;
     font-weight: 600;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
 }
 .servicestitle h2 svg{
     margin-top: 16px;
@@ -666,7 +679,7 @@ header {
     --swiper-pagination-bullet-width: 10px;
     --swiper-pagination-bullet-height: 10px;
 }
-.mySwiper {
+/* .mySwiper {
   width: 100%;
   max-width: 1280px;
   margin: auto;
@@ -721,13 +734,125 @@ header {
         font-size: 20px;
         margin-top: 20px;
     }
+} */
+/* THE MAINCONTAINER HOLDS EVERYTHING */
+.maincontainer{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1500px;
+    margin: auto;
+    height: 373px;
+    padding-left: 70px;
 }
+
+/* THE CARD HOLDS THE FRONT AND BACK FACES */
+.thecard{
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: 282px;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 0.8s ease;
+  margin-right: 10px;
+}
+
+/* THE PSUEDO CLASS CONTROLS THE FLIP ON MOUSEOVER AND MOUSEOUT */
+.thecard:hover{
+  transform: rotateY(180deg);
+}
+
+/* THE FRONT FACE OF THE CARD, WHICH SHOWS BY DEFAULT */
+ .thefront{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  max-width: 300px;
+  border-radius: 30px;
+  backface-visibility: hidden;
+  overflow: hidden;
+}
+.thefront img{
+  border-radius: 30px;
+    width: 100%;
+    height: 100%;
+}
+
+/* THE BACK FACE OF THE CARD, WHICH SHOWS ON MOUSEOVER */
+.theback{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: 300px;
+  height: 100%;
+  border-radius: 30px;
+  backface-visibility: hidden;
+  overflow: hidden;
+  background: #60A6CE;
+  padding: 40px 20px;
+  text-align: center;
+  transform: rotateY(180deg);
+}
+
+/*This block (starts here) is merely styling for the flip card, and is NOT an essential part of the flip code */
+.thefront h6, .theback h6{
+  color: #0C1B32;
+  margin-bottom: 20px;
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 100%;
+  text-align: center;
+} 
+
+.thefront p, .theback p{
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%;
+  color: #0C1B32;
+}
+
+@media screen and (max-width:1200px) {
+    .maincontainer{
+        max-width: 1000px;
+        flex-wrap: wrap;
+        margin: auto;
+        row-gap: 28px;
+        padding: 0 70px;
+    }
+    .servicescontainer{
+        height: 1100px;
+    }
+}
+@media screen and (max-width:900px) {
+    .servicestitle small{
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        padding: 0;
+        margin: 0;
+    }
+    .servicescontainer{
+        height: 1900px;
+    }
+    .maincontainer{
+        justify-content: center;
+        max-width: 500px;
+        padding: 0;
+    }
+
+}
+
 .portifoliotitle p{
     max-width: 600px;
-font-size: 16px;
-font-weight: 400;
-line-height: 21px;
-letter-spacing: 0em;
+font-size: 14px;
+font-weight: 700;
+line-height: 130%;
 text-align: center;
 }
 .portifoliocontainer{

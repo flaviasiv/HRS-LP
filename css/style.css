@@ -406,7 +406,7 @@ header {
     }
 }
 .bg-blue{
-    background: linear-gradient(#65ADD4 0%, #224475 100%);
+    background: linear-gradient(#1D9CAC 0%, #050F39 100%);
 }
 .aboutcontainer{
     position: relative;
@@ -616,7 +616,7 @@ header {
 
 
 .servicescontainer{
-    background-color: #202F43;
+    background-color: #fff;
     width: 100%;
     max-width: 9999px;
     margin: auto;
@@ -965,8 +965,8 @@ swiper-slide.swiper2 {
     max-width: 9999px;
     margin: auto;
     height: 100%;
-    background-color: #E8CD61;
-    height:630px;
+    background-color: #092041;
+    height:770px;
 }
 .review{
     display: block;
@@ -975,21 +975,30 @@ swiper-slide.swiper2 {
     margin: auto;
     padding: 0;
 }
+.reviewstitle{
+    color: #FFF;
+}
 .reviewstitle h2{
     position: relative;
     z-index: 99;
-    color: #092041;
     display: flex;
     flex-direction: column;
     max-width: 150px;
     margin: auto;
-    padding: 70px 0 0 0;
+    padding: 70px 0 36px 0;
     text-align: center;
     font-size: 32px;
     font-weight: 600;
 }
 .reviewstitle h2 svg{
     margin-left: 42px;
+}
+.reviewstitle p{
+    width: 100%;
+    max-width: 570px;
+    margin: auto;
+    font-size: 16px;
+    font-weight: 600px;
 }
 .mySwiper3{
     width: 100%;
@@ -1094,7 +1103,7 @@ swiper-slide.swiper2 {
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 1200px;
+    max-width: 800px;
     margin: auto;
     color: #FFF;
     justify-content: center;

@@ -966,7 +966,7 @@ swiper-slide.swiper2 {
     margin: auto;
     height: 100%;
     background-color: #E8CD61;
-    height:610px;
+    height:630px;
 }
 .review{
     display: block;
@@ -998,7 +998,6 @@ swiper-slide.swiper2 {
     max-height: 500px;
     cursor: grab;
     margin:auto;
-    padding-top: 50px;
 }
 .swiper3 {
     text-align: center;

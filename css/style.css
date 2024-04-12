@@ -1015,8 +1015,8 @@ swiper-slide.swiper2 {
     width: 100%;
     max-width: 1400px;
     height: 100%;
-    max-height: 500px;
-    cursor: grab;
+    max-height: 390px;
+    cursor: pointer;
     margin:auto;
 }
 .swiper3 {
@@ -1030,7 +1030,7 @@ swiper-slide.swiper2 {
     background-color: #fff;
     margin-left: 17px;
     padding: 18px 16px;
-    margin-bottom: 50px;
+    height: 350px;
 }
 .swiper3 .reviewcard{
     display: flex;
@@ -1040,14 +1040,13 @@ swiper-slide.swiper2 {
     align-self: center;
     justify-content: center;
     text-align: center;
-    height: 300px;
 }
 .swiper3 svg{
-    top: 7%;
     font-size: 24px;
     font-weight: 700;
     line-height: 24px;
     text-align: center;
+    margin-bottom: 10px;
 }
 .swiper3 p{
     display: flex;
@@ -1060,7 +1059,7 @@ swiper-slide.swiper2 {
     padding: 0 15px;
 }
 .swiper3 h2{
-    bottom: 7%;
+    margin-top: 10px;
     font-size: 24px;
     font-weight: 700;
     line-height: 24px;

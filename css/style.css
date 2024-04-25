@@ -238,7 +238,7 @@ header {
   padding-top: 50px;
   border-bottom-right-radius: 32px;
   border-bottom-left-radius: 32px;
-  height:350px
+  height:430px
   }
   .menu-links ul{
       display: block;
@@ -260,8 +260,7 @@ header {
       flex-wrap: wrap;
       width: 150;
       justify-content: center;
-      margin: auto;
-      margin-bottom: 10px;
+      margin: 10px auto;
   }
   .menusocial ul li:last-child{
       margin-top: -0.1px;

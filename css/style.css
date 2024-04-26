@@ -639,7 +639,7 @@ header {
     justify-content: center;
     font-size: 18px
 }
-.servicescontainer .servicestitle h2{
+.servicescontainer .servicestitle h2, .servicestitle h3{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -653,12 +653,8 @@ header {
 .servicestitle h2 svg{
     margin-top: 16px;
 }
-
-:root {
-    --swiper-navigation-color: #eee;
-    --swiper-pagination-color: #333333cc;
-    --swiper-pagination-bullet-width: 10px;
-    --swiper-pagination-bullet-height: 10px;
+.servicestitle h3{
+    font-size: 22px;
 }
 .listareas{
     display: flex;
@@ -669,12 +665,19 @@ header {
     gap: 36px;
     text-align: left;
     margin-bottom: 32px;
+    margin-left: 45px;
     font-size: 16px;
     line-height: 130%;
     font-weight: 500;
 }
 .listareas ul{
     text-decoration: dotted;
+}
+:root {
+    --swiper-navigation-color: #eee;
+    --swiper-pagination-color: #333333cc;
+    --swiper-pagination-bullet-width: 10px;
+    --swiper-pagination-bullet-height: 10px;
 }
 /* .mySwiper {
   width: 100%;
@@ -850,6 +853,7 @@ header {
         text-align: left;
         gap: 28px;
         font-size: 12px;
+        margin-left: 5px;
     }
 }
 

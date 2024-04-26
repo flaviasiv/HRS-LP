@@ -116,14 +116,15 @@ header {
 }
 .socialgettouch{
     display: inline-flex;
-    /* background: linear-gradient(90deg, rgba(174,134,37,1) 10%, rgba(210,172,71,1) 55%, rgba(247,239,138,1) 100%); */
-    background: repeating-linear-gradient(to right, #a2682a 0%, #be8c3c 8%, #be8c3c 18%, #d3b15f 27%, #faf0a0 35%, #ffffc2 40%, #faf0a0 50%, #d3b15f 58%, #be8c3c 67%, #b17b32 77%, #bb8332 83%, #d4a245 88%, #e1b453 93%, #a4692a 100%);
+    /* background: linear-gradient(90deg, rgba(174,134,37,1) 10%, rgba(210,172,71,1) 55%, rgba(247,239,138,1) 100%); 
+    background: repeating-linear-gradient(to right, #a2682a 0%, #be8c3c 8%, #be8c3c 18%, #d3b15f 27%, #faf0a0 35%, #ffffc2 40%, #faf0a0 50%, #d3b15f 58%, #be8c3c 67%, #b17b32 77%, #bb8332 83%, #d4a245 88%, #e1b453 93%, #a4692a 100%);*/
+    background-color: #092041;
     border-radius: 20px;
     display: flex;
     justify-content: center;
     font-size: 16px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 150%;
     align-items: center;
     text-align: center;
@@ -140,7 +141,7 @@ header {
     width: auto;
 }
 .menusocial .socialgettouch a{
-    color: #092041;
+    color: #fff;
 }
 
 .logo-m{
@@ -516,8 +517,9 @@ header {
 }
 .aboutimgbg{
     width: 100%;
-    max-width: 383px;
+    max-width: 583px;
     margin: auto;
+    border-radius: 20px;
 }
 .preferencegrid{
     width: 100%;
@@ -556,18 +558,9 @@ header {
     width: 100%;
     max-width: 335px
 }
-@media screen and (max-width: 1300px) {
-    .aboutimgbg{
-        max-width: 303px;
-    }
-} 
 @media screen and (max-width: 1170px) {
-    .imgs-about{
-        flex-direction: column;
-        gap: 25px;
-    }
     .aboutimgbg{
-        max-width: 253px;
+        max-width:553px;
     }
 .preference {
     display: flex;
@@ -666,6 +659,22 @@ header {
     --swiper-pagination-color: #333333cc;
     --swiper-pagination-bullet-width: 10px;
     --swiper-pagination-bullet-height: 10px;
+}
+.listareas{
+    display: flex;
+    width: 100%;
+    max-width: 1500px;
+    margin: auto;
+    justify-content: center;
+    gap: 36px;
+    text-align: left;
+    margin-bottom: 32px;
+    font-size: 16px;
+    line-height: 130%;
+    font-weight: 500;
+}
+.listareas ul{
+    text-decoration: dotted;
 }
 /* .mySwiper {
   width: 100%;
@@ -836,15 +845,20 @@ header {
         max-width: 500px;
         padding: 0;
     }
-
+    .listareas{
+        justify-content: center;
+        text-align: left;
+        gap: 28px;
+        font-size: 12px;
+    }
 }
 
 .portifoliotitle p{
     max-width: 600px;
-font-size: 14px;
-font-weight: 700;
-line-height: 130%;
-text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 130%;
+    text-align: center;
 }
 .portifoliocontainer{
     width: 100%;
@@ -860,7 +874,7 @@ text-align: center;
 }
 .portifoliotitle{
     font-family: 'Urbanist', sans-serif;
-    color: #07041E
+    color: #fff
 }
 .portifoliocontainer .portifoliotitle h2{
     display: flex;

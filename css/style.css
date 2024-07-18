@@ -115,8 +115,6 @@ header {
 }
 .socialgettouch{
     display: flex;
-    /* background: linear-gradient(90deg, rgba(174,134,37,1) 10%, rgba(210,172,71,1) 55%, rgba(247,239,138,1) 100%); 
-    background: repeating-linear-gradient(to right, #a2682a 0%, #be8c3c 8%, #be8c3c 18%, #d3b15f 27%, #faf0a0 35%, #ffffc2 40%, #faf0a0 50%, #d3b15f 58%, #be8c3c 67%, #b17b32 77%, #bb8332 83%, #d4a245 88%, #e1b453 93%, #a4692a 100%);*/
     background-color: transparent;
     border-radius: 20px;
     justify-content: center;
@@ -142,7 +140,6 @@ header {
     text-decoration: none;
     transition: 0.5s ease-out;
 }
-
 .logo-m{
     z-index: 9;
     display:block;
@@ -760,7 +757,9 @@ header {
     margin: auto;
     background-color: #45AEBE;
     color: #092041;
+    cursor: pointer;
 }
+.request a{width: 100%;max-width: 100%;}
 /* .mySwiper {
   width: 100%;
   max-width: 1280px;
@@ -1376,6 +1375,21 @@ footer{
 }
 .footersocials ul a{
     text-decoration: none;
+}
+.menusocial a svg, .footersocials a svg{
+    stroke: #45AEBE;
+    clip-path: #45AEBE;
+}
+.menusocial a svg path, .footersocials a svg path{
+    fill: #45aebe;
+}
+.menusocial a:hover svg path, .footersocials a:hover svg path{
+    fill: #fff;
+    transition: 0.2s all ease-in-out;
+}
+.menusocial a:hover svg, .footersocials a:hover svg {
+    stroke: #FFF;
+    transition: 0.2s all ease-in-out;
 }
 .adress{
     width: 288px;

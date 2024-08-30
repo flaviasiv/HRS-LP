@@ -113,9 +113,19 @@ header {
     cursor: pointer;
     align-items: center;
 }
+.menusocial svg path{
+    fill:#fff;
+    stroke: #FFF;
+}
+.menusocial a:hover svg{
+    fill:#45AEBE;
+}
+.menusocial svg circle{
+    stroke: #FFF
+}
 .socialgettouch{
     display: flex;
-    background-color: transparent;
+    background-color: #082f4241;
     border-radius: 20px;
     justify-content: center;
     font-size: 16px;
@@ -126,19 +136,18 @@ header {
     text-align: center;
     padding: 7px 10px;
     width: 129px;
-    color: #45AEBE;
-    border: 1px solid #45AEBE;
+    color: #fff;
+    border: 1px solid #fff;
     text-decoration: none;
+}
+.socialgettouch:hover{
+    background-color: #45AEBE;
 }
 .socialgettouch a{
     display: flex;
     gap: 9px;
     justify-content: center;
-    color: #45AEBE;
-}
-.socialgettouch:hover{
-    text-decoration: none;
-    transition: 0.5s ease-out;
+    color: #fff;
 }
 .logo-m{
     z-index: 9;
@@ -214,20 +223,19 @@ header {
       top: 0.6rem;
   }
   .menu-links{
-    background-color: #082f4241;
+    background-color: #092041;
     flex-direction: column;
     align-items:center;
-    margin-top: 0px;
     width: 100%;
-    margin-left: 0;
-    margin-right: 0;
+    padding-bottom: 20px;
     padding-top: 30px;
     border-bottom-right-radius: 32px;
     border-bottom-left-radius: 32px;
-    height:330px;
+    height:320px;
   }
   .menu-linksbtn ul{
     background-color: transparent;
+    padding: 0 0 10px;
   }
   .menu-links ul{
       display: block;
@@ -288,7 +296,7 @@ header {
   }
   .navbar {
   padding:0px 0px;
-  }
+}
   #home {
   display:flex;
   flex-direction:column;
@@ -381,27 +389,23 @@ header {
 }
 @media screen and (max-width:980px) {
     .videocontainer{
-        height: 900px;
+        height: 800px;
         max-height: 900px;
     }
     .videoimg video{
         width: 100%;
-        height:900px;
+        height:800px;
         max-height: 900px;
         object-fit: cover;
         object-position: bottom;
     }
     .videop img{
-        max-width: 170px;
-        width: 100%;
-        height: 100%;
-        margin: auto;
-        margin-bottom: 8px;
+        display: none;
     }
     .videop{
         flex-direction: column;
         padding: 0;
-        top: 50%;
+        top: 55%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
@@ -754,16 +758,19 @@ header {
     padding: 10px 10px;
     font-size: 16px;
     font-weight: 600;
-    background-color: transparent;
+    background-color: #fff;
     border: 1px solid #0B2749;
     cursor: pointer;
     width: 150px;
 }
+.servicesbtn:hover{
+    background-color: transparent;
+}
 .request{
     width: 190px;
     margin: auto;
-    background-color: #45AEBE;
-    color: #092041;
+    background-color: #092041;
+    color: #fff;
     cursor: pointer;
 }
 .request a{width: 100%;max-width: 100%;}
@@ -905,7 +912,7 @@ swiper-slide.swiper2 {
     margin: auto;
     height: 100%;
     background-color: #092041;
-    height:770px;
+    height:670px;
 }
 .review{
     display: block;
@@ -1089,11 +1096,18 @@ form {
     flex-direction: column;
     gap: 10px;
 }
-form input, textarea, select{
+form input, textarea{
     width: 100%;
     list-style: none;
     padding: 20px;
     height: 40px;
+}
+select{
+    padding: 10px;
+    height: 40px;
+}
+option:first-child{
+    background-color: gray;
 }
 form input{
     height:  46px;    
@@ -1242,7 +1256,7 @@ footer{
     stroke: #45AEBE;
     clip-path: #45AEBE;
 }
-.menusocial a svg path, .footersocials a svg path{
+.footersocials a svg path{
     fill: #45aebe;
 }
 .menusocial a:hover svg path, .footersocials a:hover svg path{
@@ -1381,6 +1395,7 @@ a:visited {
     color: inherit; 
     text-decoration: none;
 }
+a { color: inherit}
 a:-webkit-any-link{
   text-decoration: none;
 }
@@ -1422,7 +1437,7 @@ a:-webkit-any-link{
     text-align: center;
     max-width: 750px;
     gap: 32px;
-    padding: 200px 30px 100px 30px;
+    padding: 90px 30px 30px 30px;
     color: #fff;
 }
 .popupimg{
@@ -1437,12 +1452,13 @@ a:-webkit-any-link{
     align-items: center;
     text-align: left;
     padding: 8px 6px;
-    color:#45AEBE;
+    color:#092041;
     border: 1px solid #45AEBE;
     border-radius: 72px;
     width:150px;
     font-weight: 800;
     gap: 9px;
+    background-color: #FFF;
 }
 .callnowpopup a{
     display: flex;

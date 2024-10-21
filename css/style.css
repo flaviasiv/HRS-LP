@@ -470,7 +470,7 @@ header {
     border: 3px solid #092041;
     border-radius: 30px;
 }
-.reveal{
+/* .reveal{
     position: relative;
     transform: translateX(-150%);
     opacity: 0;
@@ -489,7 +489,7 @@ header {
 .reveal.active.revealtext{
     transform: translateX(0%);
     opacity: 1;
-}
+} */
 @media screen and (max-width:900px) {
     .aboutcontainer{
         max-height: auto;

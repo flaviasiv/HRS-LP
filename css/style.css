@@ -1133,6 +1133,10 @@ form button:hover{
     background-color: #309ad7cc;
     transition: 0.7s;
 }
+form label select{
+    width: 100%;
+    display: flex;
+}
 @media screen and (max-width:1290px) {
     .formgrid{
         max-height: 999px;
@@ -1171,7 +1175,6 @@ form button:hover{
         font-size: 18px;
     }
 }
-
 footer{
     position: relative;
     width: 100%;

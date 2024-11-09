@@ -458,15 +458,15 @@ header {
 .abouttext h6{
     display: flex;
     justify-content: center;
-    color: #092041;
+    color: #fff;
     width: 100%;
     max-width: 745px;
     font-size: 18px;
     font-style: normal;
-    font-weight: 900;
-    line-height: 100%;
+    font-weight:600;
+    line-height: 120%;
     margin: auto;
-    padding: 32px;
+    padding: 16px 26px;
     border: 3px solid #092041;
     border-radius: 30px;
 }
@@ -1417,6 +1417,14 @@ a:-webkit-any-link{
   color: #fff;
   transition: 0.2s all ease-in-out;
 }
+
+.servicesbody header{
+    background-color: #082F42;
+    height: 99px;
+}
+.servicesbody header nav{
+    padding-top: 0;
+}
 .popuptest{
     position: relative;
     width: 100%;
@@ -1441,7 +1449,7 @@ a:-webkit-any-link{
     max-width: 750px;
     gap: 32px;
     padding: 120px 30px 30px 30px;
-    color: #fff;
+    color: #050F39;
 }
 .popupimg{
     width: 100%;
@@ -1461,7 +1469,7 @@ a:-webkit-any-link{
     width:150px;
     font-weight: 800;
     gap: 9px;
-    background-color: #FFF;
+    background-color: #0CC0DF;
 }
 .callnowpopup a{
     display: flex;

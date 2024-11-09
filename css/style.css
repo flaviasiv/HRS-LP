@@ -142,6 +142,7 @@ header {
 }
 .socialgettouch:hover{
     background-color: #45AEBE;
+    transition: 0.1s;
 }
 .socialgettouch a{
     display: flex;
@@ -808,6 +809,7 @@ header {
     margin: auto;
     padding: 70px 0px;
     height: auto;
+    background-color: #1D9CAC;
 }
 .portifolio{
     width: 100%;
@@ -827,14 +829,14 @@ header {
     font-size: 32px;
     font-style: normal;
     font-weight: 600;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
 }
 .portifoliotitle h2 svg{
     margin-top: 16px;
 }
 .portifoliotitle p{
     display: block;
-    max-width: 447px;
+    max-width:347px;
     text-align: center;
     margin: auto;
     font-size:16px;
@@ -854,7 +856,6 @@ swiper-container.mySwiper2 {
 }
 swiper-slide.swiper2 {
   max-width: 476px;
-  border-radius: 30px;
   margin-left: 0px;
   padding-bottom: 50px;
 }
@@ -863,7 +864,7 @@ swiper-slide.swiper2 {
   max-width: 100% !important;
   margin: auto;
   height: 460px;
-  border-radius: 32px;
+  border-radius: 24px;
   justify-content: start;
   object-fit: cover !important;
   object-position: center;
@@ -884,12 +885,7 @@ swiper-slide.swiper2 {
 .swiper2 img {
   width: 100% !important;
   max-width: 430px !important;
-  margin: auto;
   height: 430px;
-  border-radius: 32px;
-  justify-content: start;
-  object-fit: cover !important;
-  object-position: center;
 }
 }
 
@@ -1182,7 +1178,7 @@ footer{
     margin: auto;
     height: auto;
     background-color: #092041;
-    color: #3FCDE6;
+    color: #fff;
 }
 .footergrid{
     display: flex;
@@ -1210,7 +1206,7 @@ footer{
     line-height: 130%;
 }
 .footermenu1 ul li a:hover {
-    color: #fff;
+    color: #45AEBE;
     transition: 0.1s;
 }
 .footermenu1 ul{
@@ -1256,18 +1252,18 @@ footer{
     text-decoration: none;
 }
 .menusocial a svg, .footersocials a svg{
-    stroke: #45AEBE;
-    clip-path: #45AEBE;
+    stroke: #fff;
+    clip-path: #fff;
 }
 .footersocials a svg path{
-    fill: #45aebe;
-}
-.menusocial a:hover svg path, .footersocials a:hover svg path{
     fill: #fff;
+}
+.footersocials a:hover svg path{
+    fill: #45AEBE;
     transition: 0.2s all ease-in-out;
 }
 .menusocial a:hover svg, .footersocials a:hover svg {
-    stroke: #FFF;
+    stroke: #45AEBE;
     transition: 0.2s all ease-in-out;
 }
 .adress{
@@ -1294,10 +1290,10 @@ footer{
     background-color: #092041;
     align-items: center;
     text-align: center;
-    border-top: 1px solid #3FCDE6;
+    border-top: 1px solid #fff;
 }
 .rights p{
-    color: #3FCDE6;
+    color: #fff;
     font-size: 14.4px;
     font-weight: 500;
     line-height: 150%;

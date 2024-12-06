@@ -1281,16 +1281,26 @@ footer{
     margin: auto;
 }
 .rights{
+    display: flex;
+    justify-content: space-between;
     position: relative;
     height: 81px;
     width: 100%;
     max-width: 9999px;
     margin: auto;
-    padding: 34px 0;
+    padding: 34px;
     background-color: #092041;
     align-items: center;
     text-align: center;
     border-top: 1px solid #fff;
+}
+.rights ul{
+    display: flex;
+    gap: 10px;
+    list-style: none;
+}
+.rights a {
+    text-decoration: underline;
 }
 .rights p{
     color: #fff;
@@ -1380,6 +1390,7 @@ footer{
         text-decoration: none;
     }
     .rights{
+        flex-direction: column;
         height: 70px;
         padding: 30px 0;
     }

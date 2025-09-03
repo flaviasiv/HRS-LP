@@ -151,6 +151,9 @@ header {
     transition: 0.1s;
     color: #082f4241 !important;
 }
+.socialgettouch a:hover{
+    color: #082f4241 !important;
+}
 .logo-m{
     z-index: 9;
     display:block;

@@ -140,15 +140,16 @@ header {
     border: 1px solid #fff;
     text-decoration: none;
 }
-.socialgettouch:hover{
-    background-color: #45AEBE;
-    transition: 0.1s;
-}
 .socialgettouch a{
     display: flex;
     gap: 9px;
     justify-content: center;
     color: #fff;
+}
+.socialgettouch:hover{
+    background-color: #45AEBE;
+    transition: 0.1s;
+    color: #082f4241 !important;
 }
 .logo-m{
     z-index: 9;

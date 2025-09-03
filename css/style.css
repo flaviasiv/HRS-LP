@@ -149,10 +149,10 @@ header {
 .socialgettouch:hover{
     background-color: #45AEBE;
     transition: 0.1s;
-    color: #082f4241 !important;
+    color: #082F42 !important;
 }
 .socialgettouch a:hover{
-    color: #082f4241 !important;
+    color: #082F42 !important;
 }
 .logo-m{
     z-index: 9;
